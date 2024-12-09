@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aide Technique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .block {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: calc(50% - 20px);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .block h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .block ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aide Technique</h1>
+    <div class="container">
+        <!-- Bloc 1 -->
+        <div class="block">
+            <h2>Aide à l'Activation d'une Clé MD940 C</h2>
+            <p>Appel entrant/Sortant</p>
+            <p>Porteur</p>
+            <p>Tél :</p>
+            <p>Descriptif du souci :</p>
+            <p>Message d'erreur :</p>
+            <h3>PMAD</h3>
+            <p>Windows/Mac OS</p>
+            <p>Intel</p>
+            <h3>Diagnostic :</h3>
+            <ul>
+                <li>Suppression ancien pilote</li>
+                <li>Installation des nouveaux pilotes</li>
+            </ul>
+            <h3>Résultats :</h3>
+            <ul>
+                <li>TKM OK</li>
+                <li>TBF OK</li>
+                <li>CC OK</li>
+                <li>Usage</li>
+                <li>Accès logiciel tiers OK</li>
+                <li>Signature OK</li>
+            </ul>
+        </div>
+        
+        <!-- Bloc 2 -->
+        <div class="block">
+            <h2>Déblocage du Code PIN</h2>
+            <p>Appel entrant/Sortant</p>
+            <p>Porteur</p>
+            <p>Tél :</p>
+            <p>Descriptif du souci :</p>
+            <p>Message d'erreur :</p>
+            <h3>PMAD</h3>
+            <p>Windows/Mac OS</p>
+            <p>Intel</p>
+            <h3>Diagnostic :</h3>
+            <ul>
+                <li>Lancer TKM/GSD</li>
+                <li>Déblocage du Code PIN</li>
+            </ul>
+            <h3>Résultats :</h3>
+            <ul>
+                <li>TBF OK</li>
+                <li>Usage</li>
+                <li>Signature/Accès au logiciel tiers</li>
+            </ul>
+            <p><strong>Résolu</strong></p>
+        </div>
+        
+        <!-- Bloc 3 -->
+        <div class="block">
+            <h2>Clé non reconnue</h2>
+            <p>Appel entrant/Sortant</p>
+            <p>Porteur</p>
+            <p>Descriptif du souci :</p>
+            <p>Message d'erreur :</p>
+            <h3>PMAD</h3>
+            <p>Windows/Mac OS</p>
+            <p>Intel</p>
+            <h3>Diagnostic :</h3>
+            <ul>
+                <li>Statut Révoqué/Valide dans certisupport</li>
+                <li>Suppression ancien pilote</li>
+                <li>Installation des nouveaux pilotes</li>
+                <li>Vérification dans Gestionnaire de périphérique :</li>
+                <ul>
+                    <li>Windows Hello For Business</li>
+                    <li>Appareil Uicc Iso</li>
+                    <li>Clé Token Renault/Clé SWIFT</li>
+                    <li>USB Token : MAJ du lecteur en Microsoft USBCCID</li>
+                </ul>
+                <li>MAJ PC</li>
+                <li>Redémarrage du PC</li>
+                <li>Test sur un autre poste si TKM KO</li>
+                <li>Récupérer les logs de TKM</li>
+            </ul>
+            <h3>Résultats :</h3>
+            <ul>
+                <li>Test TBF OK</li>
+                <li>Usage</li>
+                <li>Signature/Accès logiciels tiers</li>
+            </ul>
+            <p><strong>Résolu</strong></p>
+        </div>
+        
+        <!-- Bloc 4 -->
+        <div class="block">
+            <h2>Certificat non reconnu</h2>
+            <p>Appel entrant/Sortant</p>
+            <p>Porteur</p>
+            <p>Tél :</p>
+            <p>Descriptif du souci :</p>
+            <p>Message d'erreur :</p>
+            <h3>PMAD</h3>
+            <p>Windows/Mac OS</p>
+            <p>Intel</p>
+            <h3>Diagnostic :</h3>
+            <ul>
+                <li>Suppression ancien pilote</li>
+                <li>Installation des nouveaux pilotes</li>
+                <li>Vérification dans Gestionnaire de périphérique :</li>
+                <ul>
+                    <li>Lecteur de Cartes à Puces s'affiche en WDUF</li>
+                </ul>
+                <li>TKM OK</li>
+                <li>TBF KO</li>
+                <li>Proxy :</li>
+                <li>Antivirus :</li>
+                <li>VPN</li>
+                <li>Citrix</li>
+                <li>Test en navigation Web privée</li>
+                <li>Extension dans le navigateur</li>
+                <li>Test sur un autre réseau</li>
+                <li>Test sur un autre poste</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
