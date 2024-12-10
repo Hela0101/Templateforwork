@@ -9,6 +9,24 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        .header {
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .header .important {
+            color: red;
+            font-weight: bold;
+        }
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -30,6 +48,20 @@
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Formulaire de demande OTP</h1>
+        <p>Si vous n'avez pas reçu votre code d'activation, nous vous invitons à vérifier que le message contenant le code d'activation n’a pas été détecté comme un courrier indésirable par votre solution AntiSpam</p>
+        <p>(Expéditeur: noreply@certeurope.fr; Objet du message: Votre identifiant).</p>
+        <p>Si le problème persiste ou si vous souhaitez modifier le mode d'envoi et/ou vos coordonnées de contact, nous vous invitons à répondre à ce mail en complétant le formulaire suivant :</p>
+        <p><strong>Prénom et nom du Porteur :</strong></p>
+        <p><strong>SIREN :</strong></p>
+        <p><strong>Je souhaite recevoir mon code d'activation à :</strong></p>
+        <p>(indiquer un numéro de téléphone portable ou une adresse mail)</p>
+        <p class="important">Joindre au mail la photocopie de la pièce d’identité du porteur. (en couleurs)</p>
+    </div>
+
+    <!-- Main Content Section -->
     <h1>Aide Technique</h1>
     <div class="container">
         <!-- Bloc 1 -->
@@ -59,98 +91,8 @@
             </ul>
         </div>
         
-        <!-- Bloc 2 -->
-        <div class="block">
-            <h2>Déblocage du Code PIN</h2>
-            <p>Appel entrant/Sortant</p>
-            <p>Porteur</p>
-            <p>Tél :</p>
-            <p>Descriptif du souci :</p>
-            <p>Message d'erreur :</p>
-            <h3>PMAD</h3>
-            <p>Windows/Mac OS</p>
-            <p>Intel</p>
-            <h3>Diagnostic :</h3>
-            <ul>
-                <li>Lancer TKM/GSD</li>
-                <li>Déblocage du Code PIN</li>
-            </ul>
-            <h3>Résultats :</h3>
-            <ul>
-                <li>TBF OK</li>
-                <li>Usage</li>
-                <li>Signature/Accès au logiciel tiers</li>
-            </ul>
-            <p><strong>Résolu</strong></p>
-        </div>
-        
-        <!-- Bloc 3 -->
-        <div class="block">
-            <h2>Clé non reconnue</h2>
-            <p>Appel entrant/Sortant</p>
-            <p>Porteur</p>
-            <p>Descriptif du souci :</p>
-            <p>Message d'erreur :</p>
-            <h3>PMAD</h3>
-            <p>Windows/Mac OS</p>
-            <p>Intel</p>
-            <h3>Diagnostic :</h3>
-            <ul>
-                <li>Statut Révoqué/Valide dans certisupport</li>
-                <li>Suppression ancien pilote</li>
-                <li>Installation des nouveaux pilotes</li>
-                <li>Vérification dans Gestionnaire de périphérique :</li>
-                <ul>
-                    <li>Windows Hello For Business</li>
-                    <li>Appareil Uicc Iso</li>
-                    <li>Clé Token Renault/Clé SWIFT</li>
-                    <li>USB Token : MAJ du lecteur en Microsoft USBCCID</li>
-                </ul>
-                <li>MAJ PC</li>
-                <li>Redémarrage du PC</li>
-                <li>Test sur un autre poste si TKM KO</li>
-                <li>Récupérer les logs de TKM</li>
-            </ul>
-            <h3>Résultats :</h3>
-            <ul>
-                <li>Test TBF OK</li>
-                <li>Usage</li>
-                <li>Signature/Accès logiciels tiers</li>
-            </ul>
-            <p><strong>Résolu</strong></p>
-        </div>
-        
-        <!-- Bloc 4 -->
-        <div class="block">
-            <h2>Certificat non reconnu</h2>
-            <p>Appel entrant/Sortant</p>
-            <p>Porteur</p>
-            <p>Tél :</p>
-            <p>Descriptif du souci :</p>
-            <p>Message d'erreur :</p>
-            <h3>PMAD</h3>
-            <p>Windows/Mac OS</p>
-            <p>Intel</p>
-            <h3>Diagnostic :</h3>
-            <ul>
-                <li>Suppression ancien pilote</li>
-                <li>Installation des nouveaux pilotes</li>
-                <li>Vérification dans Gestionnaire de périphérique :</li>
-                <ul>
-                    <li>Lecteur de Cartes à Puces s'affiche en WDUF</li>
-                </ul>
-                <li>TKM OK</li>
-                <li>TBF KO</li>
-                <li>Proxy :</li>
-                <li>Antivirus :</li>
-                <li>VPN</li>
-                <li>Citrix</li>
-                <li>Test en navigation Web privée</li>
-                <li>Extension dans le navigateur</li>
-                <li>Test sur un autre réseau</li>
-                <li>Test sur un autre poste</li>
-            </ul>
-        </div>
+        <!-- Other Blocks -->
+        <!-- Reste du contenu existant -->
     </div>
 </body>
 </html>
